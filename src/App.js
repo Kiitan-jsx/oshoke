@@ -8,7 +8,7 @@ function App() {
   return (
    <div>
      <section className='mr-5 min-h-[100svh] '>
-      <div className="container font-inter h-screen flex flex-col font-bold items-end justify-start pt-52 lg:pt-40" >
+      <div className="container font-inter h-screen flex flex-col font-bold items-end justify-start pt-48 lg:pt-40" >
         <AnimatedTextWord text="HEY👋" delayChildren={1.1} />
         <AnimatedTextWord2 text="I'M  OSHOKE"  />
         <AnimatedTextWord text="THE" delayChildren={3.5} className="text-teal-500"/>
