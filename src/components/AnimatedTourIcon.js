@@ -47,7 +47,7 @@ const AnimatedTourIcon = ({ text, className }) => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 7.5 }} // Delay for "arrowIcon"
+              transition={{ delay: 6.5 }} // Delay for "arrowIcon"
               className={className}
             >
               <button
