@@ -61,7 +61,7 @@ const AnimatedTourIcon = ({ text, className }) => {
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              transition={{ delay: 7.5 }} // Delay for "Explore" text
+              transition={{ delay: 6.5 }} // Delay for "Explore" text
               className={className}
               dangerouslySetInnerHTML={{ __html: word }}
             />
