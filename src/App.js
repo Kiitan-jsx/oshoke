@@ -52,7 +52,7 @@ function App() {
         <AnimatedTextWord text="ASSURANCE" delayChildren={4.5}  />
         <AnimatedTextWord text="ENGINEER" delayChildren={5} className="border-b-2 border-teal-500" style={{ paddingBottom: "10px" }} />
         <div className='mt-24 mr-[63%]'>
-          <AnimatedTourIcon text="Explore arrowIcon" className="mt-2 mr-1" />
+          <AnimatedTourIcon text="Explore arrowIcon" className="mt-2 p-1" />
         </div>
 
       </div>
