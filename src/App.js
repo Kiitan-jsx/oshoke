@@ -50,37 +50,40 @@ function App() {
         <AnimatedTextWord text="THE" delayChildren={3.5} className="text-teal-600"/>
         <AnimatedTextWord text="QUALITY" delayChildren={4} />
         <AnimatedTextWord text="ASSURANCE" delayChildren={4.5}  />
-        <AnimatedTextWord text="ENGINEER" delayChildren={5} className="border-b-2 border-teal-500" style={{ paddingBottom: "10px" }} />
+        <AnimatedTextWord text="ENGINEER" delayChildren={5} className="border-b-2 border-teal-600" style={{ paddingBottom: "10px" }} />
         <div className='mt-24 mr-[63%]'>
-          <AnimatedTourIcon text="Explore arrowIcon" className="mt-2 pl-2" />
+          <AnimatedTourIcon text="Explore arrowIcon" className="mt-2" />
         </div>
 
       </div>
      
     </section>
 
-    <section id="section2" className="mt-10 min-h-[100svh] bg-gradient-to-b from-white via-white to-teal-100">
-      <div className='flex px-4'>
-        <motion.div
-        ref={ref}
-        initial="hidden"
-        animate={inView ? "visible" : "hidden"}
-        variants={variants}
-        >
-          <div className="border-r-2 pr-5 border-teal-600 leftdiv">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sed sunt voluptas...
-          </div>
-        </motion.div>
-        <motion.div
-      ref={ref2}
-      initial="hidden"
-      animate={inView2 ? "visible" : "hidden"}
-      variants={variants2}
-    >
-      <div className='pl-5 rightdiv'>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.
-      </div>
-    </motion.div>
+    <section id="section2" className=" min-h-[100svh] bg-gradient-to-b from-white via-white to-teal-100 ">
+      <div className='cl flex-col items-center justify-center h-full'>
+        <div className='flex px-4 sec2'>
+          <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={variants}
+          >
+            <div className="border-r-2 pr-5 border-teal-600 leftdiv">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sed sunt voluptas...velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.
+            </div>
+          </motion.div>
+
+          <motion.div
+            ref={ref2}
+            initial="hidden"
+            animate={inView2 ? "visible" : "hidden"}
+            variants={variants2}
+          >
+            <div className='pl-5 rightdiv'>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.
+            </div>
+          </motion.div>
+        </div>
       </div>
     </section>
 
