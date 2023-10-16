@@ -63,16 +63,16 @@ function App() {
 
     <section id="section2" className=" min-h-[100svh] bg-gradient-to-b from-white via-white to-teal-100 border-2 contt">
       <div className=''>
-        <div className='flex px-4 sec2'>
+        <div className='flex px-10 sec2'>
           <motion.div
           ref={ref}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
           >
-             <div className="border-r-2 pr-5 border-teal-600 leftdiv">
+             <div className="border-r-2 pr-1 border-teal-600 leftdiv">
                 <div className=' h-full w-40 items-center justify-center ' > 
-                  <div className='p-5'>
+                  <div className='p-2'>
                   <img src={hero} alt="memoji" className='rounded-full border border-teal-600 h-32 w-32' /> 
                   </div>
                 </div>
@@ -87,7 +87,7 @@ function App() {
           >
             <div className='pl-5 rightdiv'>
               <div className=' text-lg font-medium text-center'>About Me</div>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem 
             </div>
           </motion.div>
         </div>
