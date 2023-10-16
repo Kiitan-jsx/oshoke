@@ -63,7 +63,7 @@ function App() {
 
     <section id="section2" className=" min-h-[100svh] bg-gradient-to-b from-white via-white to-teal-100 border-2 contt">
       <div className=''>
-        <div className='flex px-10 sec2'>
+        <div className='flex px-2 sec2'>
           <motion.div
           ref={ref}
           initial="hidden"
