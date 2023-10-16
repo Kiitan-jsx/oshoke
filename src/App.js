@@ -4,6 +4,8 @@ import AnimatedTextWord2 from './components/AnimatedTextWord2';
 import AnimatedTourIcon from './components/AnimatedTourIcon';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import hero from './assets/hero.jpeg'
+
 
 
 
@@ -59,8 +61,8 @@ function App() {
      
     </section>
 
-    <section id="section2" className=" min-h-[100svh] bg-gradient-to-b from-white via-white to-teal-100 ">
-      <div className='cl flex-col items-center justify-center h-full'>
+    <section id="section2" className=" min-h-[100svh] bg-gradient-to-b from-white via-white to-teal-100 border-2 contt">
+      <div className=''>
         <div className='flex px-4 sec2'>
           <motion.div
           ref={ref}
@@ -68,9 +70,13 @@ function App() {
           animate={inView ? "visible" : "hidden"}
           variants={variants}
           >
-            <div className="border-r-2 pr-5 border-teal-600 leftdiv">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur sed sunt voluptas...velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.
-            </div>
+             <div className="border-r-2 pr-5 border-teal-600 leftdiv">
+                <div className=' h-full w-40 items-center justify-center ' > 
+                  <div className='p-5'>
+                  <img src={hero} alt="memoji" className='rounded-full border border-teal-600 h-32 w-32' /> 
+                  </div>
+                </div>
+             </div>
           </motion.div>
 
           <motion.div
@@ -80,7 +86,8 @@ function App() {
             variants={variants2}
           >
             <div className='pl-5 rightdiv'>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.
+              <div className=' text-lg font-medium text-center'>About Me</div>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaecati dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.
             </div>
           </motion.div>
         </div>

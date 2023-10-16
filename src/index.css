@@ -21,4 +21,10 @@
   .bounce {
     animation: bounce 3s infinite;
   }
+
+  .contt {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
   
