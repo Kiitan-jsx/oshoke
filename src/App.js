@@ -5,6 +5,8 @@ import AnimatedTourIcon from './components/AnimatedTourIcon';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import hero from './assets/hero.jpeg'
+import flutterwave from './assets/flutterwave.png'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 
 
 
@@ -44,11 +46,12 @@ function App() {
   };
 
   return (
-   <div>
+   <Router>
+    <div>
      <section className='mr-5 min-h-[100svh] '>
       <div className="container font-inter h-screen flex flex-col font-bold items-end justify-start pt-48 lg:pt-40" >
         <AnimatedTextWord text="HEY👋" delayChildren={1.1} />
-        <AnimatedTextWord2 text="I'M  OSHOKE"  />
+        <AnimatedTextWord2 text="I'M  OSHIOKE"  />
         <AnimatedTextWord text="THE" delayChildren={3.5} className="text-teal-600"/>
         <AnimatedTextWord text="QUALITY" delayChildren={4} />
         <AnimatedTextWord text="ASSURANCE" delayChildren={4.5}  />
@@ -61,14 +64,50 @@ function App() {
      
     </section>
 
-    <section id="section2" className=" min-h-[100svh] bg-gradient-to-b from-white via-white to-teal-100 border-2 contt">
+    <section id="section2" className=" min-h-[100svh] bg-white border-2 contt">
       <div className=''>
-        <div className='flex px-2 sec2'>
+        <div className=' flex-col px-2 py-4 sec2'>
           <motion.div
           ref={ref}
           initial="hidden"
           animate={inView ? "visible" : "hidden"}
           variants={variants}
+          className='h-full border-teal-600'
+          >
+             <div className="border-b border-slate-500 px-auto pb-7 text-center leftdiv flex items-center px-10">
+                <div className=' h-full w-[100%] flex items-center justify-center border ' > 
+                <img src={flutterwave} alt="flutterwave" className='border-slate-500 border mx-10' />
+                </div>
+             </div>
+          </motion.div>
+
+          <motion.div
+            ref={ref2}
+            initial="hidden"
+            animate={inView2 ? "visible" : "hidden"}
+            variants={variants2}
+          >
+            <div className=' rightdiv'>
+            <div className='  text-xl font-inter font-semibold text-center mt-7 px-10 '>FLUTTERWAVE</div>
+              <div  className='px-5 pt-2 text-center'>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem velit possimus molestiae commodi ab earum? Obcaeti dolor harum corrupti voluptatem tempore? Deserunt, ea sunt.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos, et saepe, quibusdam similique voluptatem 
+              </div>
+            </div>
+          </motion.div>
+        </div>
+      </div>
+    </section>
+
+
+    {/* <section id="section3" className=" min-h-[100svh] bg-white border-2 contt">
+      <div className=''>
+        <div className='flex px-2 py-4 sec2'>
+          <motion.div
+          ref={ref}
+          initial="hidden"
+          animate={inView ? "visible" : "hidden"}
+          variants={variants}
+          className='h-full border-r-2 border-teal-600'
           >
              <div className="border-r-2 pr-1 border-teal-600 leftdiv">
                 <div className=' h-full w-40 items-center justify-center ' > 
@@ -92,10 +131,11 @@ function App() {
           </motion.div>
         </div>
       </div>
-    </section>
+    </section> */}
 
 
    </div>
+   </Router>
     
 
   );
