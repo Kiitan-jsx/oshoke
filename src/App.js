@@ -24,7 +24,7 @@ function App() {
       opacity: 1,
       x: 0,
       transition: {
-        duration: .7, // Adjust the duration as needed
+        duration: .5, // Adjust the duration as needed
       },
     },
   };
@@ -40,7 +40,7 @@ function App() {
       opacity: 1,
       x: 0, // Move to its original position
       transition: {
-        duration: 0.7, // Adjust the duration as needed
+        duration: 0.5, // Adjust the duration as needed
       },
     },
   };
