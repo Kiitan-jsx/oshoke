@@ -76,7 +76,7 @@ function App() {
           >
              <div className="border-b border-slate-500 px-auto pb-7 text-center leftdiv flex items-center px-5 mx-7">
                 <div className=' h-full w-[100%] flex items-center justify-center border ' > 
-                <img src={flutterwave} alt="flutterwave" className='border-slate-500 border mx-10' />
+                <img src={flutterwave} alt="flutterwave" className='border-gray-300 border mx-10' />
                 </div>
              </div>
           </motion.div>
