@@ -40,6 +40,7 @@ const AnimatedTextWord = ({ text, className, delayChildren, style  }) => {
       variants={container}
       initial="hidden"
       animate="visible"
+      
     >
       {words.map((word, index) => (
         <motion.span

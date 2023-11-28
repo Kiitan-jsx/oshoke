@@ -1,26 +1,15 @@
-import { useState } from 'react';
 import AnimatedTextWord from '../components/AnimatedTextWord'
 import AnimatedTextWord2 from '../components/AnimatedTextWord2';
 import AnimatedTourIcon from '../components/AnimatedTourIcon';
 import { motion } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
 import flutterwave from '../assets/flutterwave.png'
-import { Link } from 'react-router-dom'
+import Navbar from '../components/Navbar';
 
 
 
 
 function Home() {
-
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const resetPage = () => {
-    setIsMenuOpen(false);
-  }
   
   
   const [ref, inView] = useInView({
@@ -50,7 +39,7 @@ function Home() {
       opacity: 1,
       x: 0, // Move to its original position
       transition: {
-        duration: 0.5, // Adjust the duration as needed
+        duration: 0.5, 
       },
     },
   };
@@ -58,34 +47,12 @@ function Home() {
   return (
     <div>
     <section className='mr-5 min-h-[100svh] '>
-      <div className='font-inter p-5 text-lg font-semibold '>
-        <button className="menu-button ml-2 mt-5 " onClick={toggleMenu}>
-          MENU
-        </button>
-        {isMenuOpen && (
-          <div className="menu-dropdown flex w-full h-full ">
-            
-            <div className='bg-black w-40 h-full flex flex-col items-center justify-center pot'>
-             <div className='text-white hidden text-md mt-10 sm:hidden md:flex lg:flex xl:flex'>\con <span className='text-black'>tent\</span></div>
-
-            </div>
-            <div>
-              <ul className='pt-60 h-full  '>
-                <Link to="/work"> <li className='pb-5 ml-16 ' onClick={resetPage}> <span className='pr-5' >01</span> <span className='border-b border-teal-600 '>WORK</span> </li></Link>
-                <li className='pb-5 ml-16'> <span className='pr-5'>02</span> <span className='border-b border-teal-600 '>CAREER</span></li>
-                <li className='pb-5 ml-16'><span className='pr-5'>03</span> <span className='border-b border-teal-600 '>PROJECTS</span></li>
-                <li className='pb-5 ml-16'><span className='pr-5'>04</span> <span className='border-b border-teal-600 '>THOUGHTS</span></li>
-                <li onClick={toggleMenu} className='pb-5 ml-16 text-teal-700 font-semibold '><span className='pr-8'>X</span> <span>CLOSE</span></li>
-              </ul>
-            </div>
-          </div>
-        )}
-      </div>
-        <div className="container font-inter h-screen flex flex-col font-bold items-end justify-start pt-36 lg:pt-40">
+      <Navbar />
+        <div className="container font-inter h-screen flex flex-col font-bold items-end justify-start pt-36 lg:pt-40 lg:">
          
-          <AnimatedTextWord text="HEY👋" delayChildren={1.1} />
-          <AnimatedTextWord2 text="I'M  OSHIOKE" />
-          <AnimatedTextWord text="THE" delayChildren={3.5} className="text-teal-600" />
+          <AnimatedTextWord text="HEY👋" delayChildren={1.1} className="lg:text-6xl" />
+          <AnimatedTextWord2 text="I'M  OSHIOKE" className="lg:text-6xl"/>
+          <AnimatedTextWord text="THE" delayChildren={3.5} className="text-teal-600  lg:text-6xl" />
           <AnimatedTextWord text="QUALITY" delayChildren={4} />
           <AnimatedTextWord text="ASSURANCE" delayChildren={4.5} />
           <AnimatedTextWord
